@@ -1,7 +1,8 @@
 import React from 'react'
 import { useFormulario } from '../hooks/useFormulario'
+import Swal from 'sweetalert2'
 
-function Formulario() {
+function Formulario({setPersonajeNombre}) {
 
     const [inputs, handleChange, reset] = useFormulario({
         nombre: ''
@@ -13,6 +14,16 @@ function Formulario() {
         e.preventDefault()
         console.log(nombre)
 
+        if (!nombre.trim()){
+            return Swal.fire({
+                title: 'Error!',
+                text: 'Debe escribir un personaje',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+              })
+        }
+
+        setPersonajeNombre(nombre.trim().toLowerCase())
         reset()
     }
 
