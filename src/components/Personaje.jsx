@@ -2,7 +2,8 @@ import React from 'react'
 
 function Personaje({personaje}) {
 
-    const {name, species, image, status, gender} = personaje
+    const {name, species, image, status, type,gender ,location} = personaje
+
 
   return (
     <div className='col-md-4 mb-2'>
@@ -12,7 +13,11 @@ function Personaje({personaje}) {
                 <h5>{name}</h5>
                 <p>{gender}</p>
                 <p>Status : {status}</p>
-                <p>{species}</p>
+                {
+                   type?<p>{type}</p>: <p>{species}</p>
+                }
+                <p>Location: {location.name}</p>
+                
             </div>
         </div>
     </div>

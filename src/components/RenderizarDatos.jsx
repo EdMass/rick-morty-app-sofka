@@ -12,7 +12,7 @@ function RenderizarDatos({personajeNombre}) {
 
     const manejadorApi = async(name) => {
         try {
-            const respuesta = await fetch(`https://rickandmortyapi.com/api/character/?name=${name}&status=alive`)
+            const respuesta = await fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
             if(!respuesta.ok){
                 return Swal.fire({
                     title: 'Error!',
