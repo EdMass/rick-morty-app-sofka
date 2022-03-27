@@ -7,6 +7,8 @@ const Encabezado = () => {
         <a className="navbar-brand text-uppercase" href="/">
           Rick and Morty App
         </a>
+        <a className="navbar-brand " href="#">Episodios</a>
+        <a className="navbar-brand " href="#">Localizaciones</a>
       </div>
     </nav>
   );

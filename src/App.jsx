@@ -9,13 +9,16 @@ const App = () => {
     const [personajeNombre, setPersonajeNombre] = useState('')
        
   return (
-     
-    <div className='container'>
-        <Encabezado />
+     <>
+     <Encabezado />
+     <div className='container'>
+        
         <br></br>
         <Formulario setPersonajeNombre={setPersonajeNombre} />
         <RenderizarDatos personajeNombre={personajeNombre} />
     </div>
+    </>
+    
   )
 }
 
