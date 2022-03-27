@@ -9,6 +9,7 @@ const Encabezado = () => {
         </a>
         <a className="navbar-brand " href="#">Episodios</a>
         <a className="navbar-brand " href="#">Localizaciones</a>
+        <a className="navbar-brand " href="#">Favoritos</a>
       </div>
     </nav>
   );
