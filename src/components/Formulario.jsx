@@ -12,7 +12,6 @@ function Formulario({setPersonajeNombre}) {
 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(nombre)
 
         if (!nombre.trim()){
             return Swal.fire({
