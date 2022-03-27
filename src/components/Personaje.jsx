@@ -6,8 +6,8 @@ function Personaje({personaje}) {
 
 
   return (
-    <div className='col-md-4 mb-2'>
-        <div className='card'>
+    <div className='col mb-4'>
+        <div className='card' style={{minWidth: "230px"}} >
             <img src={image} alt={`imagen-${name}`} className='card-img-top' />
             <div className='card-body'>
                 <h5>{name}</h5>

@@ -23,8 +23,8 @@ function RenderizarDatos({personajeNombre}) {
             }
 
             const contenido = await respuesta.json()
-            console.log(contenido.results)
             setPersonajes(contenido.results)
+            
         } catch (error) {
             console.log(error)
         }finally{

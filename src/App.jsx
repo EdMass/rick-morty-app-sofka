@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import Encabezado from './components/Encabezado'
 import Formulario from './components/Formulario'
 import RenderizarDatos from './components/RenderizarDatos'
 
@@ -8,8 +9,10 @@ const App = () => {
     const [personajeNombre, setPersonajeNombre] = useState('')
        
   return (
+     
     <div className='container'>
-        <h1>App Rick and Morty</h1>
+        <Encabezado />
+        <br></br>
         <Formulario setPersonajeNombre={setPersonajeNombre} />
         <RenderizarDatos personajeNombre={personajeNombre} />
     </div>
